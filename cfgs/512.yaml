@@ -1,0 +1,32 @@
+general:
+  name: estimated_ms-small_search
+  # path: ./exp-cpu
+  # agent: GV601VI
+  log_wandb: True
+  verbose: 0
+
+train:
+  algorithm: SAC
+  n_envs: 1
+  seed: 0
+  total_timesteps: 500
+  model_save_freq: 1000
+  eval_freq: 20
+  n_eval_episodes: 1
+
+env:
+  env_id: "matmul"
+  cudagraph: True
+  fp: 16
+  size: 512
+  train_dev: 7
+  eval_dev: 2
+  warmup: 100
+  repeat: 100
+  search_space: [
+    [32, 64, 128],
+    [32, 64, 128],
+    [32, 64, 128],
+    [1, 2, 3, 4, 5],
+    [2, 4, 8],
+  ]

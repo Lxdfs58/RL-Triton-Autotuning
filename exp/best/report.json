@@ -1,0 +1,124 @@
+{
+    "general": {
+        "GPU": 7,
+        "Total_time": "00:43:54",
+        "compile_time": "145:36:36",
+        "FPS": 113.89437233200245,
+        "Fail_count": 0
+    },
+    "eval": {
+        "elapsed_time": "00:42:26",
+        "compile_time": "82:55:42",
+        "best_step": 171000,
+        "best_config": {
+            "512": {
+                "ms": 0.005374074913561344,
+                "info": {
+                    "size": 512,
+                    "ms": 0.005374074913561344,
+                    "BLOCK_SIZE_M": 64,
+                    "BLOCK_SIZE_N": 64,
+                    "BLOCK_SIZE_K": 64,
+                    "num_stages": 4,
+                    "num_warps": 4
+                }
+            },
+            "1024": {
+                "ms": 0.017009876668453217,
+                "info": {
+                    "size": 1024,
+                    "ms": 0.017009876668453217,
+                    "BLOCK_SIZE_M": 128,
+                    "BLOCK_SIZE_N": 128,
+                    "BLOCK_SIZE_K": 32,
+                    "num_stages": 5,
+                    "num_warps": 4
+                }
+            },
+            "1536": {
+                "ms": 0.04157865047454834,
+                "info": {
+                    "size": 1536,
+                    "ms": 0.04157865047454834,
+                    "BLOCK_SIZE_M": 64,
+                    "BLOCK_SIZE_N": 128,
+                    "BLOCK_SIZE_K": 32,
+                    "num_stages": 3,
+                    "num_warps": 4
+                }
+            },
+            "2048": {
+                "ms": 0.08610044419765472,
+                "info": {
+                    "size": 2048,
+                    "ms": 0.08610044419765472,
+                    "BLOCK_SIZE_M": 128,
+                    "BLOCK_SIZE_N": 128,
+                    "BLOCK_SIZE_K": 32,
+                    "num_stages": 4,
+                    "num_warps": 4
+                }
+            },
+            "2560": {
+                "ms": 0.14702320098876953,
+                "info": {
+                    "size": 2560,
+                    "ms": 0.14702320098876953,
+                    "BLOCK_SIZE_M": 128,
+                    "BLOCK_SIZE_N": 128,
+                    "BLOCK_SIZE_K": 32,
+                    "num_stages": 5,
+                    "num_warps": 4
+                }
+            },
+            "3072": {
+                "ms": 0.25754299759864807,
+                "info": {
+                    "size": 3072,
+                    "ms": 0.25754299759864807,
+                    "BLOCK_SIZE_M": 128,
+                    "BLOCK_SIZE_N": 128,
+                    "BLOCK_SIZE_K": 32,
+                    "num_stages": 4,
+                    "num_warps": 4
+                }
+            },
+            "3584": {
+                "ms": 0.40705832839012146,
+                "info": {
+                    "size": 3584,
+                    "ms": 0.40705832839012146,
+                    "BLOCK_SIZE_M": 128,
+                    "BLOCK_SIZE_N": 128,
+                    "BLOCK_SIZE_K": 32,
+                    "num_stages": 4,
+                    "num_warps": 4
+                }
+            },
+            "4096": {
+                "ms": 0.5874046683311462,
+                "info": {
+                    "size": 4096,
+                    "ms": 0.5874046683311462,
+                    "BLOCK_SIZE_M": 128,
+                    "BLOCK_SIZE_N": 128,
+                    "BLOCK_SIZE_K": 32,
+                    "num_stages": 4,
+                    "num_warps": 4
+                }
+            },
+            "8192": {
+                "ms": 4.492541790008545,
+                "info": {
+                    "size": 8192,
+                    "ms": 4.492541790008545,
+                    "BLOCK_SIZE_M": 128,
+                    "BLOCK_SIZE_N": 128,
+                    "BLOCK_SIZE_K": 32,
+                    "num_stages": 4,
+                    "num_warps": 4
+                }
+            }
+        }
+    }
+}

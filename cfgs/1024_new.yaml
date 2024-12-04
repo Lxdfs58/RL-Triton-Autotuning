@@ -1,0 +1,38 @@
+general:
+  name: sim_ms-FS100-bestcfg_observ-reset_every100step-acted_penalty
+  # path: ./exp-cpu
+  # agent: GV601VI
+  log_wandb: False
+  mode: train
+  verbose: 0
+
+train:
+  algorithm: PPO
+  n_envs: 1
+  seed: 0
+  total_timesteps: 200000
+  model_save_freq: 1000
+  eval_freq: 200
+  n_eval_episodes: 1
+  framestack: 100
+  episode_step: 100
+  random_sample: False
+
+env:
+  env_id: "matmul"
+  cudagraph: True
+  sim: False
+  fp: 16
+  size: 1024
+  datasizes: [1024]
+  train_dev: 0
+  eval_dev: 0
+  warmup: 0
+  repeat: 100
+  search_space: [
+    [16, 32, 64, 128, 256, 512],
+    [16, 32, 64, 128, 256, 512],
+    [16, 32, 64, 128, 256, 512],
+    [1, 2, 3, 4, 5, 6, 7, 8],
+    [2, 4, 8, 16, 32],
+  ]

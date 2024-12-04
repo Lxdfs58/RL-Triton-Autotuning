@@ -1,0 +1,39 @@
+general:
+  name: nrm_obs-eps9-allsizes
+  # path: ./exp-cpu
+  # agent: GV601VI
+  log_wandb: False
+  mode: train
+  verbose: 0
+
+train:
+  algorithm: PPO
+  n_envs: 1
+  seed: 0
+  total_timesteps: 50
+  model_save_freq: 20
+  eval_freq: 10
+  n_eval_episodes: 1
+  framestack: null
+  random_sample: False
+
+env:
+  env_id: "matmul"
+  cudagraph: True
+  sim: False
+  episode_len: 9
+  fp: 16
+  size: 0
+  datasizes: [512, 1024, 1536, 2048, 2560, 3072, 3584, 4096, 8192]
+  # datasizes: [1024, 2048, 4096]
+  train_dev: 1
+  eval_dev: 1
+  warmup: 0
+  repeat: 100
+  search_space: [
+    [16, 32, 64, 128, 256, 512],
+    [16, 32, 64, 128, 256, 512],
+    [16, 32, 64, 128, 256, 512],
+    [1, 2, 3, 4, 5, 6, 7, 8],
+    [2, 4, 8, 16, 32],
+  ]
